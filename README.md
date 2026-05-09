@@ -12,12 +12,19 @@ App Store 제출에 필요한 최소 웹 페이지입니다.
 
 ## GitHub Pages 배포
 
-이 repo는 `.github/workflows/deploy-pages.yml`로 `site/` 폴더를 GitHub Pages에 배포합니다.
+무료 배포를 위해 앱 본체 private repo와 분리한 public repo에서 GitHub Pages를 사용합니다.
 
-1. GitHub repo → Settings → Pages로 이동합니다.
-2. Source를 `GitHub Actions`로 설정합니다.
-3. `main` 브랜치에 push하거나 `Deploy Pages` workflow를 수동 실행합니다.
-4. 배포 후 아래 URL을 App Store Connect에 입력합니다.
+현재 공개 repo:
+
+- `https://github.com/seongmin-kye/jipfeed-site`
+
+배포 설정:
+
+- Source: Deploy from a branch
+- Branch: `main`
+- Folder: `/`
+
+배포 후 아래 URL을 App Store Connect에 입력합니다.
 
 권장 입력값:
 
