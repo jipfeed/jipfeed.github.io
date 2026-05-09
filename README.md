@@ -1,14 +1,18 @@
 # 집피드 웹사이트
 
-App Store 제출에 필요한 최소 웹 페이지입니다.
+집피드 App Store 제출과 사용자 지원에 필요한 정적 웹사이트입니다.
+
+운영 URL:
+
+- `https://jipfeed.github.io/`
 
 ## 포함 페이지
 
 - `/` 서비스 소개
-- `/privacy` 개인정보처리방침
-- `/terms` 이용약관
-- `/support` 고객 지원
-- `/share` 공유 링크용 기본 페이지
+- `/privacy.html` 개인정보처리방침
+- `/terms.html` 이용약관
+- `/support.html` 고객 지원
+- `/share.html` 공유 링크용 기본 페이지
 
 ## GitHub Pages 배포
 
@@ -16,7 +20,7 @@ App Store 제출에 필요한 최소 웹 페이지입니다.
 
 현재 공개 repo:
 
-- `https://github.com/seongmin-kye/jipfeed-site`
+- `https://github.com/jipfeed/jipfeed.github.io`
 
 배포 설정:
 
@@ -24,16 +28,26 @@ App Store 제출에 필요한 최소 웹 페이지입니다.
 - Branch: `main`
 - Folder: `/`
 
-배포 후 아래 URL을 App Store Connect에 입력합니다.
+`main` 브랜치에 push하면 GitHub Pages가 정적 HTML/CSS 파일을 배포합니다. 별도 서버, DB,
+Vercel, Node 런타임은 없습니다.
 
-권장 입력값:
+## App Store Connect 입력값
 
-- Privacy Policy URL: `https://seongmin-kye.github.io/realty_app/privacy.html`
-- Support URL: `https://seongmin-kye.github.io/realty_app/support.html`
-- Terms URL: `https://seongmin-kye.github.io/realty_app/terms.html`
-- Marketing URL: `https://seongmin-kye.github.io/realty_app/`
+- Marketing URL: `https://jipfeed.github.io/`
+- Privacy Policy URL: `https://jipfeed.github.io/privacy.html`
+- Support URL: `https://jipfeed.github.io/support.html`
+- Terms URL: `https://jipfeed.github.io/terms.html`
 
 커스텀 도메인은 출시 후 검색 유입이나 브랜드 운영이 필요해질 때 연결해도 됩니다.
+
+## 비용
+
+현재 구조에서는 서버 비용이 없습니다.
+
+- GitHub Pages 정적 호스팅 사용
+- public repo 기반 무료 배포
+- 서버 API, 데이터베이스, 인증 기능 없음
+- 커스텀 도메인 미사용
 
 ## 참고 기준
 
